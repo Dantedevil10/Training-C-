@@ -1,24 +1,30 @@
-﻿using ConsoleApp1;
 using System;
-using System.Timers;
- class Program
+
+class Program
 {
     public static void Main(string[] args)
     {
         //Classe
-        System.Timers.Timer timer = new System.Timers.Timer(2000);  
-        
-        
-        
+         outra outra1 = new outra();
 
+        outra1.name = "Jonh";
+        outra1.age = 21;
+
+         outra1.Ola();
+        
         EXclasse.mensagem();
         EXclasse.espere();
         timer.Start();
         EXclasse.Final();
 
-
+        
     }
-   
-    
+}
+class outra{
+  public String name;
+  public int age;
 
+  public void Ola(){
+  Console.WriteLine($"Oi {name} Tu Tem {age} Anux!");
+ }
 }
